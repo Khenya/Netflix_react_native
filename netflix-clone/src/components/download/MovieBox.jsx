@@ -12,8 +12,8 @@ const MovieBox = ({ title, description, imageUrl, onDelete }) => {
         <Text style={styles.titleMovieContainer}>{title}</Text>
         <Text style={styles.descriptionMovieContainer}>{description}</Text>
       </View>
-      <TouchableOpacity onPress={onDelete} style={styles.deleteButton}>
-        <FontAwesome name="trash" size={24} color="red" />
+      <TouchableOpacity onPress={onDelete}>
+        <FontAwesome name="trash"  style={styles.deleteButton}/>
       </TouchableOpacity>
     </View>
   );

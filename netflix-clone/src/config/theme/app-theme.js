@@ -41,6 +41,11 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         color: colors.blanco2
     },
+    deleteButton:{
+        fontSize:24,
+        textAlign: "right",
+        color: colors.primary 
+    },
     buttonsContainer: {
         flex: 2,
         paddingTop: 20,
@@ -89,10 +94,9 @@ export const styles = StyleSheet.create({
         marginVertical: 10
     }, 
     title: {
-        color: colors.rojo2,
+        color: colors.primary,
         fontSize: 24,
         fontWeight: 'bold',
-        marginBottom: 20,
-        direction: "center"
+        textAlign: "center",
     },
 });
