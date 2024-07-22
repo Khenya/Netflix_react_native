@@ -4,7 +4,8 @@ import HomeScreen from './src/screens/HomeScreen';
 import DownloadScreen from './src/screens/DownloadScreen';
 import SearchScreen from './src/screens/SearchScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
-
+import DescripcionMovieScreen from './src/screens/DescripcionMovieScreen';
+import PlayMovieScreen from './src/screens/PlayMovieScreen';
 
 export default function App() {
   return (
@@ -13,7 +14,9 @@ export default function App() {
       {/* <HomeScreen/> */}
       {/* <SearchScreen /> */}
 
-      <ProfileScreen/>
+      {/* <ProfileScreen/> */}
+      {/* <DescripcionMovieScreen/> */}
+      <PlayMovieScreen/>
     </NavigationContainer>
   );
 }

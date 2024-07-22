@@ -11,7 +11,7 @@ import { styles } from "../config/theme/app-theme";
 
 const logoNetflix = require("../assets/netflixlogo.png");
 
-const MovieComponent = ({ imageUrl, neflix, top10, nuevaTemporada }) => {
+const MovieComponent = ({ imageUrl, neflix, top10, nuevaTemporada,}) => {
     const goToMovie = () => {
         console.log("goToMovie");
       };
