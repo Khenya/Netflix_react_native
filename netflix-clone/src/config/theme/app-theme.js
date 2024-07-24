@@ -384,5 +384,30 @@ export const styles = StyleSheet.create({
         height: 50,
         borderRadius: 30,
         paddingHorizontal: 30,
-  }
+  },
+  // SearchScreen
+  containerTextBox: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    paddingVertical: 10,
+  },
+  searchIcon: {
+    fontSize: 15,
+    color: "#fff",
+    opacity: 0.5,
+    position: "absolute",
+    left: 22,
+    zIndex: 1,
+  },
+  textInput: {
+    width: "95%",
+    height: 40, 
+    backgroundColor: "#333333", 
+    borderRadius: 5,
+    paddingLeft: 35,
+    opacity: 0.9,
+    fontSize: 15,
+    color: "#FFFFFF", 
+  },
 });
