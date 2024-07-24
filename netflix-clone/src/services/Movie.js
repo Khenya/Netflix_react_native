@@ -7,7 +7,7 @@ const Movie = () => {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
-            
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MTc0N2IxYWNiMGJiODYxZjNkNjk0ODQzMmFjZDQxMCIsIm5iZiI6MTcyMTMxNjQ0NS4xNzM4NDYsInN1YiI6IjY2OTkyNjlhNzJkM2VhZTEyM2E1OGFjMCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9tboLr4y61YyQGsQ4EMYU2nm3-rr8tPsCxBuKt42_ic',
         },
     });
     const getMovies = async (include_adult, include_video, language, page, sort_by) => {

@@ -10,6 +10,7 @@ import { styles } from "../config/theme/app-theme";
 
 const image = "https://www.dolby.com/siteassets/xf-site/content-detail-pages/sv2_1280x1920_stothard_dolby_02.jpg";
 
+
 const ProfileScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
