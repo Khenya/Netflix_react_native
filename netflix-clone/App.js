@@ -13,7 +13,7 @@ import { ComingSoonStack } from "./src/navigators/ComingSoonNavigator";
 import { DownloadStack } from "./src/navigators/DownloadNavigator";
 import { HomeStack } from "./src/navigators/HomeNavigator";
 import { SearchStack } from "./src/navigators/SearchNavigator";
-
+import { colors, styles } from "./src/config/theme/app-theme";
 const Tab = createBottomTabNavigator();
 
 export default function App() {
@@ -64,12 +64,10 @@ function setIcon(route, routeStatus) {
     iconName = "download";
   }
 
-  let color = "white";
   return (
     <AwesomeIcon
       name={iconName}
-      size={20}
-      color={color}
+      style={styles.icon}
       
       // style={{ padding: 10 }}
     />

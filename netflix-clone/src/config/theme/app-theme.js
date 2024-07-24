@@ -68,7 +68,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     marginHorizontal: 10,
     // Sombra para iOS
-    shadowColor: "#000",
+    shadowColor: colors.black,
     shadowOffset: {
       width: 0,
       height: 2,
@@ -394,11 +394,18 @@ export const styles = StyleSheet.create({
   },
   searchIcon: {
     fontSize: 15,
-    color: "#fff",
+    color: colors.blanco3,
     opacity: 0.5,
     position: "absolute",
     left: 22,
     zIndex: 1,
+  },
+  icon: {
+    fontSize: 18,
+    color: colors.blanco3,
+    justifyContent: "center",
+    alignItems: "center",
+    top:12
   },
   textInput: {
     width: "95%",
