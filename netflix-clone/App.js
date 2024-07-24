@@ -68,7 +68,7 @@ function setIcon(route, routeStatus) {
   return (
     <AwesomeIcon
       name={iconName}
-      size={20}
+      size={40}
       color={color}
       
       // style={{ padding: 10 }}
