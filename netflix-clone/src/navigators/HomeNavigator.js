@@ -4,6 +4,7 @@ import HomeScreen from "../screens/HomeScreen";
 import ListaPeliculasScreen from "../screens/ListaPeliculasScreen";
 import DescripcionMovieScreen from "../screens/DescripcionMovieScreen";
 import PlayMovieScreen from "../screens/PlayMovieScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 
 const Stack = createStackNavigator();
 
@@ -11,9 +12,10 @@ export const HomeStack = () => {
     return (
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="1" component={HomeScreen}></Stack.Screen>
-        <Stack.Screen name="1" component={ListaPeliculasScreen}></Stack.Screen>
-        <Stack.Screen name="2" component={DescripcionMovieScreen}></Stack.Screen>
-        <Stack.Screen name="3" component={PlayMovieScreen}></Stack.Screen>
+        <Stack.Screen name="2" component={ListaPeliculasScreen}></Stack.Screen>
+        <Stack.Screen name="3" component={DescripcionMovieScreen}></Stack.Screen>
+        <Stack.Screen name="4" component={PlayMovieScreen}></Stack.Screen>
+        <Stack.Screen name="5" component={ProfileScreen}></Stack.Screen>
       </Stack.Navigator>
     );
   };
