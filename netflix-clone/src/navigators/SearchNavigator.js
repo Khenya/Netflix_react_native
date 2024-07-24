@@ -1,6 +1,6 @@
 import { createStackNavigator } from "@react-navigation/stack";
 
-import Se
+
 import ListaPeliculasScreen from "../screens/ListaPeliculasScreen";
 import DescripcionMovieScreen from "../screens/DescripcionMovieScreen";
 import PlayMovieScreen from "../screens/PlayMovieScreen";
