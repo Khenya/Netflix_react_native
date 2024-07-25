@@ -19,7 +19,7 @@ const MovieComponent = ({ imageUrl, neflix, top10, nuevaTemporada }) => {
   };
 
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("playMovieScreen")}>
+    <TouchableOpacity onPress={() => navigation.navigate("descripcionMovieScreen")}>
       <View style={styles.containerMovie}>
         <ImageBackground
           source={{ uri: imageUrl }}

@@ -327,7 +327,7 @@ export const styles = StyleSheet.create({
   containerDescripcionMovieScreen: {
     flex: 1,
     backgroundColor: colors.black, //Por mientras
-    paddingTop: 50,
+    // paddingTop: 50,
     justifyContent: "flex-start",
   },
 
@@ -423,6 +423,15 @@ export const styles = StyleSheet.create({
   containerCarrusel :{
     height:100,
     width:200,
-    
+  },
+
+  containerContinueWatching:{
+    width:200,
+            margin:20,
+            flexDirection: "row",
+            alignItems: "center",
+            // justifyContent: 'space-between',
+            // borderWidth:2,
+            // borderColor:'white'
   }
 });

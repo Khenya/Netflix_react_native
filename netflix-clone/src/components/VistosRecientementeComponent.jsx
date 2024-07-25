@@ -1,12 +1,14 @@
 import { ImageBackground, View, Text, TouchableOpacity } from "react-native";
 import Icon1 from "react-native-vector-icons/Ionicons";
 import Icon2 from "react-native-vector-icons/Feather";
-
+import { useNavigation } from "@react-navigation/native";
 import { styles } from "../config/theme/app-theme";
 
 const VistosRecientementeComponent = ({ imageUrl, nameMovie }) => {
+  const navigation = useNavigation();
+
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate("descripcionMovieScreen")}>
       <View>
         <ImageBackground
           style={styles.containerVistoRecientemente}

@@ -70,7 +70,7 @@ const DescripcionMovieScreen = () => {
             </Text>
           </View>
         </View>
-        <ButtonsDescripcionVideoComponent />
+        {/* <ButtonsDescripcionVideoComponent /> */}
       </ScrollView>
     </SafeAreaView>
   );
