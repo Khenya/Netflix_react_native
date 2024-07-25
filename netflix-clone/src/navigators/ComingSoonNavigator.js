@@ -8,8 +8,8 @@ const Stack = createStackNavigator();
 export const ComingSoonStack = () => {
     return (
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="1" component={CommingSoonScreen}></Stack.Screen>
-        <Stack.Screen name="2" component={ProfileScreen}></Stack.Screen>
+        <Stack.Screen name="commingSoonScreen" component={CommingSoonScreen}></Stack.Screen>
+        <Stack.Screen name="profileScreen" component={ProfileScreen}></Stack.Screen>
       </Stack.Navigator>
     );
   };

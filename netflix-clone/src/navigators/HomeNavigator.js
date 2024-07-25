@@ -11,11 +11,11 @@ const Stack = createStackNavigator();
 export const HomeStack = () => {
     return (
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="1" component={HomeScreen}></Stack.Screen>
-        <Stack.Screen name="2" component={ListaPeliculasScreen}></Stack.Screen>
-        <Stack.Screen name="3" component={DescripcionMovieScreen}></Stack.Screen>
-        <Stack.Screen name="4" component={PlayMovieScreen}></Stack.Screen>
-        <Stack.Screen name="5" component={ProfileScreen}></Stack.Screen>
+        <Stack.Screen name="homeScreen" component={HomeScreen}></Stack.Screen>
+        <Stack.Screen name="listaPeliculasScreen" component={ListaPeliculasScreen}></Stack.Screen>
+        <Stack.Screen name="descripcionMovieScreen" component={DescripcionMovieScreen}></Stack.Screen>
+        <Stack.Screen name="playMovieScreen" component={PlayMovieScreen}></Stack.Screen>
+        <Stack.Screen name="profileScreen" component={ProfileScreen}></Stack.Screen>
       </Stack.Navigator>
     );
   };

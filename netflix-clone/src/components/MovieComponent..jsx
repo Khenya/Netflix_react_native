@@ -6,18 +6,20 @@ import {
   Text,
   TouchableOpacity,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import { styles } from "../config/theme/app-theme";
 
 const logoNetflix = require("../assets/netflixlogo.png");
 
-const MovieComponent = ({ imageUrl, neflix, top10, nuevaTemporada,}) => {
-    const goToMovie = () => {
-        console.log("goToMovie");
-      };
+const MovieComponent = ({ imageUrl, neflix, top10, nuevaTemporada }) => {
+  const navigation = useNavigation();
+  const goToMovie = () => {
+    console.log("goToMovie");
+  };
 
   return (
-    <TouchableOpacity onPress={goToMovie}>
+    <TouchableOpacity onPress={() => navigation.navigate("playMovieScreen")}>
       <View style={styles.containerMovie}>
         <ImageBackground
           source={{ uri: imageUrl }}

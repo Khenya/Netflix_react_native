@@ -49,17 +49,28 @@ const DescripcionMovieScreen = () => {
           />
         </ScrollView>
         <Divider style={{ width: 380, marginLeft: 22 }} />
-        <View style={{marginTop:25, flexDirection:'row',flex:1, }}>
+        <View style={{ marginTop: 25, flexDirection: "row", flex: 1 }}>
           <ActorsMovieComponent
             imageActor={imageActor}
             nameActor={"Alex Pina"}
           />
-          <View style={{flexDirection:'column', flex:1,margin:17,}}>
-            <Text style={{color:'white',fontSize:20,fontWeight:'100'}}>Director</Text>
-            <Text style={{color:'white', fontSize:10,marginTop:10, marginRight:50,}}>{description}</Text>
+          <View style={{ flexDirection: "column", flex: 1, margin: 17 }}>
+            <Text style={{ color: "white", fontSize: 20, fontWeight: "100" }}>
+              Director
+            </Text>
+            <Text
+              style={{
+                color: "white",
+                fontSize: 10,
+                marginTop: 10,
+                marginRight: 50,
+              }}
+            >
+              {description}
+            </Text>
           </View>
         </View>
-        <ButtonsDescripcionVideoComponent/>
+        <ButtonsDescripcionVideoComponent />
       </ScrollView>
     </SafeAreaView>
   );

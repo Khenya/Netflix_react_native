@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.black,
-    paddingTop: 50,
+    paddingTop: 0,
     justifyContent: "flex-start",
     paddingHorizontal: 10,
     paddingVertical: 10,
@@ -218,7 +218,7 @@ export const styles = StyleSheet.create({
   },
 
   containerTitleVistoRecientementeMovie: {
-    height: 50,
+    height: 40,
     width: 235,
     alignItems: "center",
     justifyContent: "center",
@@ -417,4 +417,12 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     color: "#FFFFFF", 
   },
+
+  // Estilos CarruselComponent
+
+  containerCarrusel :{
+    height:100,
+    width:200,
+    
+  }
 });

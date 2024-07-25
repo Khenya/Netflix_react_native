@@ -1,13 +1,17 @@
 import { SafeAreaView, ScrollView, Text } from 'react-native';
 
 import { styles } from '../config/theme/app-theme';
+import HeaderGeneralComponent from '../components/HeaderGeneralComponent';
+import CarruselComponent from '../components/CarruselComponent';
+
 
 const HomeScreen = () => {
   
   return (
     <SafeAreaView style={styles.container}>
         <ScrollView >
-         <Text style = {styles.text}>holas</Text>
+         <HeaderGeneralComponent />
+         <CarruselComponent/>
         </ScrollView>
     </SafeAreaView>
   );
