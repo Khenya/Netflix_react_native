@@ -166,4 +166,77 @@ export const movies = [
     "description": "A love letter to journalists from a fictional American newspaper in France.",
     "uri": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E69AB941309B62FE5D72E8B0A0299F5D82F3F0D47F2522B09F983BED3942F226/scale?width=506&amp;aspectRatio=2.00&amp;format=webp"
   },
+  {
+    "id": 29,
+   
+"title": "No Sudden Move",
+"description": "A group of criminals must unravel a complex conspiracy.",
+"uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyJMTisaPSvqTE2XOasN2h6uEerMLmzjwRXg&usqp=CAU"
+},
+{
+"id": 30,
+"title": "The Green Knight",
+"description": "A fantasy epic about a knight's quest to prove himself.",
+"uri": "https://i.ytimg.com/vi/aRejWo0j7Bs/maxresdefault.jpg"
+},
+{
+"id": 31,
+"title": "A Quiet Place Part II",
+"description": "The Abbott family must navigate a world inhabited by creatures that hunt by sound.",
+"uri": "https://m.media-amazon.com/images/S/pv-target-images/0e4533ec8578d2b6041f0921371c5179a7a5a4ce2f9d7c38b73c10a17e3f2118.jpg"
+},
+{
+"id": 32,
+"title": "Malignant",
+"description": "A woman experiences horrifying visions connected to a dark past.",
+"uri": "https://www.upressonline.com/wp-content/uploads/2021/09/Malignant-movie.jpg"
+},
+{
+"id": 33,
+"title": "Jungle Cruise",
+"description": "A riverboat captain and a scientist embark on an adventure in the Amazon.",
+"uri": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A68DBD783C60CB88DFD1492D149DF3CB2A036253F87B4212B35E57D4A4464C2F/scale?width=1200&amp;aspectRatio=1.78&amp;format=webp"
+},
+{
+"id": 34,
+"title": "In the Heights",
+"description": "A vibrant musical about the lives and dreams of residents in Washington Heights.",
+"uri": "https://i0.wp.com/www.serendypia.com/wp-content/uploads/2021/08/InTheHeights.jpg?fit=1140%2C660&ssl=1"
+},
+{
+"id": 35,
+"title": "The Suicide Squad",
+"description": "A group of villains undertake a dangerous mission for a chance at redemption.",
+"uri": "https://resizing.flixster.com/KP_bQh2ZudT1eCeot6GD2e7K87A=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p18707169_v_h9_ai.jpg"
+},
+{
+"id": 36,
+"title": "Respect",
+"description": "The story of Aretha Franklin's rise to fame and personal struggles.",
+"uri": "https://images.squarespace-cdn.com/content/v1/53a91858e4b006b9082369ca/1630378946638-J01EU2LOYLW366UHH6US/aretha-poster-820x350.jpg"
+},
+{
+"id": 37,
+"title": "Demon Slayer: Mugen Train",
+"description": "A young demon slayer and his comrades embark on a journey to defeat demons on a train.",
+"uri": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/11/demon-slayer-demon-train-1.jpg"
+},
+{
+"id": 38,
+"title": "Cruella",
+"description": "The origin story of the iconic Disney villain Cruella de Vil.",
+"uri": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/1885BDF2ADEC24C7998781D2F94BA46069FA2906E87315A0C1D45542AE9360A3/scale?width=506&amp;aspectRatio=2.00&amp;format=webp"
+},
+{
+"id": 39,
+"title": "The Mitchells vs. The Machines",
+"description": "A quirky family battles against a robot uprising during a road trip.",
+"uri": "https://www.hollywoodreporter.com/wp-content/uploads/2021/04/CON_cld110.1170_KV_lm_v4-H-2021-1618864468.jpg?w=1024"
+},
+{
+"id": 40,
+"title": "Free Guy",
+"description": "A bank teller discovers he is a background character in a video game.",
+"uri": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/2FA5695A9D10CD3FF378BFE434E618C630B5728AEF36E3D5122A29624741F92B/scale?width=1200&amp;aspectRatio=1.78&amp;format=webp"
+}
 ];
