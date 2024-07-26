@@ -1,5 +1,5 @@
-import { SafeAreaView, ScrollView} from "react-native";
-
+import React, { useState } from "react";
+import { SafeAreaView, ScrollView } from "react-native";
 import { styles } from "../config/theme/app-theme";
 import HeaderGeneralComponent from "../components/HeaderGeneralComponent";
 import CarruselComponent from "../components/CarruselComponent";
@@ -7,69 +7,85 @@ import MovieContinueWatchingComponent from "../components/MovieContinueWatchingC
 import MovieMyListComponent from "../components/MovieMyListComponent";
 import ListsHomeComponent from "../components/ListsHomeComponent";
 import MovieNetflixOriginalsComponent from "../components/MovienetflixOriginalsComponent";
-import { useEffect, useState } from "react";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import CarouselMovie from "../components/common/CarruselMovie";
-import CarouselImage from "../components/common/CarruselImage";
 import { movies } from "../data/movies";
 
-const image =
-  "https://www.dolby.com/siteassets/xf-site/content-detail-pages/sv2_1280x1920_stothard_dolby_02.jpg";
+// Función para seleccionar una película aleatoria
+const getRandomMovie = () => {
+  const randomIndex = Math.floor(Math.random() * movies.length);
+  return movies[randomIndex];
+};
+
 const HomeScreen = () => {
-  // const [currentMovies, setCurrentMovies] = useState(movies.slice(0, 5));
-  // const [allMovies, setAllMovies] = useState(movies.slice(0, 4));
-  // const getMoreMovies = (pagination, limit) => {
-  //   console.log('getMoreMovies');
-  //   setAllMovies([...allMovies, ...movies.slice(4, 6)]);
-  // }
-  {
-    /* <ScrollView >
-    <View>
-      <CarouselMovie movies={allMovies} getMoreMovies={getMoreMovies} />
-    </View>
-    <View>
-      <CarouselImage images={currentMovies} getMoreMovies={getMoreMovies} />
-    </View>
-  </ScrollView> */
-  }
+  const [allMovies, setAllMovies] = useState(movies.slice(0, 5));
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <HeaderGeneralComponent />
-        <CarruselComponent />
+        <CarruselComponent movies={allMovies} />
         <ListsHomeComponent title1={"CONTINUE"} title2={"WATCHING"} />
         <ScrollView horizontal>
-          <MovieContinueWatchingComponent
-            imageUrl={{ uri: image }}
-            tiempoVideoVisto={30}
-          />
-          <MovieContinueWatchingComponent
-            imageUrl={{ uri: image }}
-            tiempoVideoVisto={60}
-          />
-          <MovieContinueWatchingComponent
-            imageUrl={{ uri: image }}
-            tiempoVideoVisto={80}
-          />
-          <MovieContinueWatchingComponent
-            imageUrl={{ uri: image }}
-            tiempoVideoVisto={45}
-          />
+          {Array.from({ length: 4 }).map((_, index) => (
+            <MovieContinueWatchingComponent
+              key={index}
+              imageUrl={{ uri: getRandomMovie().uri }}
+              tiempoVideoVisto={Math.floor(Math.random() * 100)} // Genera un tiempo de video visto aleatorio
+            />
+          ))}
         </ScrollView>
         <ListsHomeComponent title1={"MY"} title2={"LIST"} />
         <ScrollView horizontal>
-          <MovieMyListComponent imageUrl={{ uri: image }} />
-          <MovieMyListComponent imageUrl={{ uri: image }} />
-          <MovieMyListComponent imageUrl={{ uri: image }} />
-          <MovieMyListComponent imageUrl={{ uri: image }} />
-          <MovieMyListComponent imageUrl={{ uri: image }} />
+          {Array.from({ length: 10 }).map((_, index) => (
+            <MovieMyListComponent
+              key={index}
+              imageUrl={{ uri: getRandomMovie().uri }}
+            />
+          ))}
         </ScrollView>
         <ListsHomeComponent title1={"NETFLIX"} title2={"ORIGINALS"} />
         <ScrollView horizontal>
-          <MovieNetflixOriginalsComponent imageUrl={{ uri: image }} />
-          <MovieNetflixOriginalsComponent imageUrl={{ uri: image }} />
-          <MovieNetflixOriginalsComponent imageUrl={{ uri: image }} />
-          <MovieNetflixOriginalsComponent imageUrl={{ uri: image }} />
+          {Array.from({ length: 4 }).map((_, index) => (
+            <MovieNetflixOriginalsComponent
+              key={index}
+              imageUrl={{ uri: getRandomMovie().uri }}
+            />
+          ))}
+        </ScrollView>
+        <ListsHomeComponent title1={"Critically acclaimed series"} title2={"LIST"} />
+        <ScrollView horizontal>
+          {Array.from({ length: 10 }).map((_, index) => (
+            <MovieMyListComponent
+              key={index}
+              imageUrl={{ uri: getRandomMovie().uri }}
+            />
+          ))}
+        </ScrollView>
+        <ListsHomeComponent title1={"Anime"} title2={"LIST"} />
+        <ScrollView horizontal>
+          {Array.from({ length: 10 }).map((_, index) => (
+            <MovieMyListComponent
+              key={index}
+              imageUrl={{ uri: getRandomMovie().uri }}
+            />
+          ))}
+        </ScrollView>
+        <ListsHomeComponent title1={"Romantic series"} title2={"LIST"} />
+        <ScrollView horizontal>
+          {Array.from({ length: 10 }).map((_, index) => (
+            <MovieMyListComponent
+              key={index}
+              imageUrl={{ uri: getRandomMovie().uri }}
+            />
+          ))}
+        </ScrollView>
+        <ListsHomeComponent title1={"Movies based on books"} title2={"LIST"} />
+        <ScrollView horizontal>
+          {Array.from({ length: 10 }).map((_, index) => (
+            <MovieMyListComponent
+              key={index}
+              imageUrl={{ uri: getRandomMovie().uri }}
+            />
+          ))}
         </ScrollView>
       </ScrollView>
     </SafeAreaView>
