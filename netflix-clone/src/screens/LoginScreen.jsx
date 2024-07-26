@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { SafeAreaView, TextInput, Text, StyleSheet, Image, View, TouchableOpacity, ActivityIndicator } from "react-native";
 import { Button } from "react-native-elements";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../config/firebase";
-import logo from "../assets/icon.jpg"; // Asegúrate de tener un logo de Netflix
-import SignUpScreen from "./SignUpScreen";
+// import { signInWithEmailAndPassword } from "firebase/auth";
+// import { auth } from "../config/firebase";
+import logo from "../assets/LogoNetflixHeader.png"; // Asegúrate de tener un logo de Netflix
+import SignUpScreen from "./SingUpScreen";
 import ForgotPassword from "./ForgotPasswordScreen";
 
 const LoginScreen = ({ navigation }) => {

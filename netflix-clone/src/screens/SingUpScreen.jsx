@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { SafeAreaView, TextInput, Text, StyleSheet, Image, View, TouchableOpacity, ScrollView } from "react-native";
 import { Button } from "react-native-elements";
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../config/firebase";
-import logo from "../assets/icon.jpg"; // Asegúrate de tener un logo de Netflix
+// import { createUserWithEmailAndPassword } from "firebase/auth";
+// import { auth } from "../config/firebase";
+import logo from "../assets/LogoNetflixHeader.png"; // Asegúrate de tener un logo de Netflix
 
 const SignUpScreen = ({ navigation }) => {
   const [username, setUsername] = useState("");

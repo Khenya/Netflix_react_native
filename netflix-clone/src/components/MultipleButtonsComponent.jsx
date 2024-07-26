@@ -1,12 +1,13 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { styles } from "../config/theme/app-theme";
-
+import { useNavigation } from "@react-navigation/native";
 import Icon1 from "react-native-vector-icons/Entypo";
 import Icon2 from "react-native-vector-icons/SimpleLineIcons";
 import Icon3 from "react-native-vector-icons/Octicons";
 import { colors } from "../config/theme/app-theme";
 
 const MultipleButtonsComponent = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.containerMultipleButtons}>
       <View style={styles.containerButtonText}>
@@ -15,6 +16,7 @@ const MultipleButtonsComponent = () => {
           size={20}
           color={"white"}
           style={styles.containerButtonOfMultipleButtons}
+          
         />
         <Text style={styles.textContainerButtonText}>Share</Text>
       </View>
@@ -29,7 +31,7 @@ const MultipleButtonsComponent = () => {
         </View>
         <Text style={styles.textContainerButtonText}>Rate</Text>
       </View>
-      <View style={styles.containerButtonText}>
+      <TouchableOpacity style={styles.containerButtonText} onPress={()=> navigation.navigate("playMovieScreen")}>
         <Icon1
           name="controller-play"
           size={20}
@@ -37,7 +39,7 @@ const MultipleButtonsComponent = () => {
           style={styles.containerButtonOfMultipleButtons}
         />
         <Text style={styles.textContainerButtonText}>Play</Text>
-      </View>
+      </TouchableOpacity>
       <View style={styles.containerButtonText}>
         <Icon3
           name="download"

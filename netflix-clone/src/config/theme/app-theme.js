@@ -24,30 +24,44 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.black,
-    paddingTop: 50,
+    paddingTop: 0,
     justifyContent: "flex-start",
     paddingHorizontal: 10,
     paddingVertical: 10,
+  },
+  image: {
+    width: 150,
+    height: 80,
+    borderRadius: 5,
+  },
+  textContainer: {
+    flex: 1,
+    marginLeft: 10,
+  },
+  containerDownlads: {
+    top: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10,
+    borderBottomWidth: 1,
+  },
+  deleteButton: {
+    marginLeft: 10,
+  },
+  titleMovieContainer: {
+    fontSize: 18,
+    color: colors.blanco3,
+  },
+  descriptionMovieContainer: {
+    fontSize: 12,
+    color: colors.blanco3,
   },
   port: {
     width: 80,
     height: 120,
     borderRadius: 5,
   },
-  titleMovieContainer: {
-    fontSize: 18,
-    fontWeight: "bold",
-    color: colors.blanco3,
-  },
-  descriptionMovieContainer: {
-    fontSize: 14,
-    color: colors.blanco2,
-  },
-  deleteButton: {
-    fontSize: 24,
-    textAlign: "right",
-    color: colors.primary,
-  },
+  
   buttonsContainer: {
     flex: 2,
     paddingTop: 20,
@@ -68,7 +82,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     marginHorizontal: 10,
     // Sombra para iOS
-    shadowColor: "#000",
+    shadowColor: colors.black,
     shadowOffset: {
       width: 0,
       height: 2,
@@ -218,7 +232,7 @@ export const styles = StyleSheet.create({
   },
 
   containerTitleVistoRecientementeMovie: {
-    height: 50,
+    height: 40,
     width: 235,
     alignItems: "center",
     justifyContent: "center",
@@ -327,7 +341,7 @@ export const styles = StyleSheet.create({
   containerDescripcionMovieScreen: {
     flex: 1,
     backgroundColor: colors.black, //Por mientras
-    paddingTop: 50,
+    // paddingTop: 50,
     justifyContent: "flex-start",
   },
 
@@ -344,7 +358,7 @@ export const styles = StyleSheet.create({
   },
 
   textCastCrew: {
-    color: "white",
+    color: colors.blanco3,
     fontSize: 20,
     fontWeight: "800",
   },
@@ -362,7 +376,7 @@ export const styles = StyleSheet.create({
   },
 
   containerShadowActor: {
-    shadowColor: "white",
+    shadowColor: colors.blanco3,
     shadowOffset: {
       width: 0,
       height: 6,
@@ -384,5 +398,54 @@ export const styles = StyleSheet.create({
         height: 50,
         borderRadius: 30,
         paddingHorizontal: 30,
+  },
+  // SearchScreen
+  containerTextBox: {
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    paddingVertical: 10,
+  },
+  searchIcon: {
+    fontSize: 15,
+    color: colors.blanco3,
+    opacity: 0.5,
+    position: "absolute",
+    left: 22,
+    zIndex: 1,
+  },
+  icon: {
+    fontSize: 18,
+    color: colors.blanco3,
+    justifyContent: "center",
+    alignItems: "center",
+    top:12
+  },
+  textInput: {
+    width: "95%",
+    height: 40, 
+    backgroundColor: "#333333", 
+    borderRadius: 5,
+    paddingLeft: 35,
+    opacity: 0.9,
+    fontSize: 15,
+    color: colors.blanco3, 
+  },
+
+  // Estilos CarruselComponent
+
+  containerCarrusel :{
+    height:100,
+    width:200,
+  },
+
+  containerContinueWatching:{
+    width:200,
+            margin:20,
+            flexDirection: "row",
+            alignItems: "center",
+            // justifyContent: 'space-between',
+            // borderWidth:2,
+            // borderColor:'white'
   }
 });
