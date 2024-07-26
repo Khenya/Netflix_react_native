@@ -1,5 +1,6 @@
 import { View, Text, ScrollView, SafeAreaView } from "react-native";
 import {SearchBox} from "../components/common/SearchBox";
+import HeaderGeneralComponent from "../components/HeaderGeneralComponent";
 const SearchScreen = () => {
     return <SafeAreaView style={{
         width: '100%',
@@ -7,6 +8,7 @@ const SearchScreen = () => {
         backgroundColor: 'black'
     }}>
         <ScrollView>
+            <HeaderGeneralComponent/>
             <SearchBox/>
         </ScrollView>
     </SafeAreaView>

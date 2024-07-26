@@ -10,7 +10,7 @@ const CapitulosComponent = ({ imageUrl, descriptionCapitulo, time }) => {
         borderRadius: 20,
         overflow: "hidden",
         marginTop: 15,
-        marginLeft: 10,
+        marginLeft: 30,
       }}
     >
       <ImageBackground source={{ uri: imageUrl }} style={{ flex: 1 }}>

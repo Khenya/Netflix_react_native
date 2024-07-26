@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.black,
     paddingTop: 0,
     justifyContent: "flex-start",
-    paddingHorizontal: 10,
+    // paddingHorizontal: 10,
     paddingVertical: 10,
   },
   image: {
@@ -468,7 +468,7 @@ export const styles = StyleSheet.create({
     width: 110,
     backgroundColor: "gray",
     justifyContent: "space-between",
-    marginLeft: 20,
+    marginLeft: 30,
     marginTop: 10,
     paddingHorizontal: 10,
     borderRadius: 20,

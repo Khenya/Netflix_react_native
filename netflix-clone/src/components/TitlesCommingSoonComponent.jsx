@@ -5,7 +5,7 @@ const TitlesCommingSoonComponent = ({ titleP1, titleP2 }) => {
     <View style={{
         flexDirection:'row',
         width:250,
-        marginLeft:25,
+        marginLeft:30,
         marginTop:20,
     }}>
       <Text style={{color:'white', fontWeight:'800', fontSize:15}}>{titleP1}  |</Text>
