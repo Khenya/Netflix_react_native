@@ -29,6 +29,13 @@ export const styles = StyleSheet.create({
     // paddingHorizontal: 10,
     paddingVertical: 10,
   },
+  photoContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    marginVertical: 10,
+    marginHorizontal: 6,
+},
   image: {
     width: 150,
     height: 80,
