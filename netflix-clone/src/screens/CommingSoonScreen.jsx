@@ -1,20 +1,20 @@
-import { View, Text, ScrollView } from "react-native";
+import React from 'react';
+import { View, Text, ScrollView } from 'react-native';
 
-import HeaderGeneralComponent from "../components/HeaderGeneralComponent";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { styles } from "../config/theme/app-theme";
-import MovieCommingSoonComponent from "../components/MovieCommingSoonComponent";
-import DescripcionCommingSoon from "../components/DescripcionCommingSoon";
-import ActivateNotificationComponent from "../components/ActivateNotificationComponent";
-import TitlesCommingSoonComponent from "../components/TitlesCommingSoonComponent";
-import DropdownComponent from "../components/DropdownComponent";
-import CapitulosComponent from "../components/CapitulosComponents";
+import HeaderGeneralComponent from '../components/HeaderGeneralComponent';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { styles } from '../config/theme/app-theme';
+import MovieCommingSoonComponent from '../components/MovieCommingSoonComponent';
+import DescripcionCommingSoon from '../components/DescripcionCommingSoon';
+import ActivateNotificationComponent from '../components/ActivateNotificationComponent';
+import TitlesCommingSoonComponent from '../components/TitlesCommingSoonComponent';
+import DropdownComponent from '../components/DropdownComponent';
+import CapitulosComponent from '../components/CapitulosComponents';
 
+import { movies } from '../data/movies';
 
-const image =
-  "https://www.dolby.com/siteassets/xf-site/content-detail-pages/sv2_1280x1920_stothard_dolby_02.jpg";
 const description =
-  "Secrets, lies, Revenge. Everyone at Liberty High has something to hide... and the truth is about to come out.";
+  'Secrets, lies, Revenge. Everyone at Liberty High has something to hide... and the truth is about to come out.';
 
 const CommingSoonScreen = () => {
   const options = [
@@ -27,58 +27,51 @@ const CommingSoonScreen = () => {
     console.log('Selected option:', option);
   };
 
-
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <HeaderGeneralComponent />
-        <View style={{ flexDirection: "row", marginLeft: 30, marginTop: 10 }}>
-          <Text style={{ color: "white", fontWeight: "800" }}>COMMING</Text>
-          <Text style={{ color: "white", fontWeight: "300" }}>SOON</Text>
+        <View style={{ flexDirection: 'row', marginLeft: 30, marginTop: 10 }}>
+          <Text style={{ color: 'white', fontWeight: '800' }}>COMING</Text>
+          <Text style={{ color: 'white', fontWeight: '300' }}> SOON</Text>
         </View>
-        <MovieCommingSoonComponent imageUrl={{ uri: image }} />
-        <Text
-          style={{
-            color: "white",
-            marginLeft: 30,
-            fontSize: 18,
-            marginTop: 10,
-          }}
-        >
-          13 Reasons Why
-        </Text>
-        <Text
-          style={{
-            color: "white",
-            marginLeft: 30,
-            fontSize: 8,
-            margin: 2,
-            fontWeight: "300",
-          }}
-        >
-          SEASON 4
-        </Text>
-        <DescripcionCommingSoon
-          creators={"Brian Yorkay"}
-          starring={"Dylan Minnette, Katherine Langford, Alisha Boe"}
-          description={description}
-        />
-        <ActivateNotificationComponent />
-        <TitlesCommingSoonComponent
-          titleP1={"EPISODES"}
-          titleP2={"13 REASONS WHY "}
-        />
-        <DropdownComponent options={options} onSelect={handleSelect} />
 
-        <ScrollView horizontal>
-          <CapitulosComponent imageUrl={image} descriptionCapitulo={"1. Tape 1, Side A"} time={"    54m"}></CapitulosComponent>
-        </ScrollView>
+        {movies.map((movie, index) => (
+          <View key={index} style={{ marginBottom: 20 }}>
+            <MovieCommingSoonComponent imageUrl={movie.uri} />
+            <Text style={{ color: 'white', marginLeft: 30, fontSize: 18, marginTop: 10 }}>
+              {movie.title}
+            </Text>
+            <Text style={{ color: 'white', marginLeft: 30, fontSize: 8, margin: 2, fontWeight: '300' }}>
+              {`SEASON ${index + 1}`} {/* Assuming each movie corresponds to a different season */}
+            </Text>
+            <DescripcionCommingSoon
+              creators={'Brian Yorkay'}
+              starring={'Dylan Minnette, Katherine Langford, Alisha Boe'}
+              description={description}
+            />
+            <ActivateNotificationComponent />
+            <TitlesCommingSoonComponent
+              titleP1={'EPISODES'}
+              titleP2={movie.title}
+            />
+            <DropdownComponent options={options} onSelect={handleSelect} />
+          </View>
+        ))}
+
         <TitlesCommingSoonComponent
-          titleP1={"ADITIONAL VIDEOS"}
-          titleP2={"13 REASONS WHY"}
+          titleP1={'ADDITIONAL VIDEOS'}
+          titleP2={'13 REASONS WHY'}
         />
         <ScrollView horizontal>
-        <CapitulosComponent imageUrl={image} descriptionCapitulo={"Detras de Camaras"} time={"12m"}></CapitulosComponent>
+          {movies.map((movie, index) => (
+            <CapitulosComponent
+              key={index}
+              imageUrl={movie.uri}
+              descriptionCapitulo={`Behind the Scenes of ${movie.title}`}
+              time={'12m'}
+            />
+          ))}
         </ScrollView>
       </ScrollView>
     </SafeAreaView>
