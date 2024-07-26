@@ -1,6 +1,3 @@
-import { SafeAreaView, ScrollView, Text, View } from "react-native";
-
-import { styles } from "../config/theme/app-theme";
 import HeaderGeneralComponent from "../components/HeaderGeneralComponent";
 import CarruselComponent from "../components/CarruselComponent";
 import MovieContinueWatchingComponent from "../components/MovieContinueWatchingComponent";
@@ -35,7 +32,7 @@ const HomeScreen = () => {
   </ScrollView> */
   }
   return (
-    <SafeAreaView style={styles.comtainer}>
+    <SafeAreaView style={styles.container}>
       <ScrollView>
         <HeaderGeneralComponent />
         <CarruselComponent />

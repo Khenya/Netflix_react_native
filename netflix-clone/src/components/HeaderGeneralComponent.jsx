@@ -19,7 +19,7 @@ const HeaderGeneralComponent = ({ avatar = avatarDefault }) => {
       <Icon1 name="menu" size={30} color="white" />
       <Image source={logoNetflixx} style={styles.containerLogoNetflixx} />
       <Pressable onPress={()=> navigation.navigate("profileScreen")}>
-        <Image source={avatar} style={styles.containerAvatar} />
+        <Image source={{uri:avatar}} style={styles.containerAvatar} />
       </Pressable>
     </View>
   );

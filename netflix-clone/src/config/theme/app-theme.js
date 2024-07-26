@@ -40,8 +40,8 @@ export const styles = StyleSheet.create({
   },
   containerDownlads: {
     top: 20,
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     padding: 10,
     borderBottomWidth: 1,
   },
@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
     height: 120,
     borderRadius: 5,
   },
-  
+
   buttonsContainer: {
     flex: 2,
     paddingTop: 20,
@@ -300,8 +300,8 @@ export const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 50,
-    borderWidth: 2,
-    borderColor: "white",
+    // borderWidth: 2,
+    // borderColor: "white",
     marginRight: 10,
   },
 
@@ -385,19 +385,19 @@ export const styles = StyleSheet.create({
     shadowRadius: 12,
     elevation: 10,
     marginBottom: 20,
-    marginLeft:6,
+    marginLeft: 6,
   },
 
-  containerButtonsMovieDescription:{
+  containerButtonsMovieDescription: {
     flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
-        marginTop: 20,
-        marginHorizontal: 18,
-        backgroundColor: "gray",
-        height: 50,
-        borderRadius: 30,
-        paddingHorizontal: 30,
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 20,
+    marginHorizontal: 18,
+    backgroundColor: "gray",
+    height: 50,
+    borderRadius: 30,
+    paddingHorizontal: 30,
   },
   // SearchScreen
   containerTextBox: {
@@ -419,33 +419,80 @@ export const styles = StyleSheet.create({
     color: colors.blanco3,
     justifyContent: "center",
     alignItems: "center",
-    top:12
+    top: 12,
   },
   textInput: {
     width: "95%",
-    height: 40, 
-    backgroundColor: "#333333", 
+    height: 40,
+    backgroundColor: "#333333",
     borderRadius: 5,
     paddingLeft: 35,
     opacity: 0.9,
     fontSize: 15,
-    color: colors.blanco3, 
+    color: colors.blanco3,
   },
 
   // Estilos CarruselComponent
 
-  containerCarrusel :{
-    height:100,
-    width:200,
+  containerCarrusel: {
+    height: 100,
+    width: 200,
   },
 
-  containerContinueWatching:{
-    width:200,
-            margin:20,
-            flexDirection: "row",
-            alignItems: "center",
-            // justifyContent: 'space-between',
-            // borderWidth:2,
-            // borderColor:'white'
-  }
+  containerContinueWatching: {
+    width: 200,
+    margin: 20,
+    flexDirection: "row",
+    alignItems: "center",
+    // justifyContent: 'space-between',
+    // borderWidth:2,
+    // borderColor:'white'
+  },
+
+  containerActivateNotificaction: {
+    height: 40,
+    width: 210,
+    paddingHorizontal: 10,
+    marginLeft: 30,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    borderRadius: 30,
+    backgroundColor: "gray",
+  },
+
+  //estilos para el dropdown
+  containerButtonDropDown: {
+    flexDirection: "row",
+    height: 30,
+    width: 110,
+    backgroundColor: "gray",
+    justifyContent: "space-between",
+    marginLeft: 20,
+    marginTop: 10,
+    paddingHorizontal: 10,
+    borderRadius: 20,
+    alignItems: "center",
+  },
+
+  buttonTextDropDown: {
+    color: "white",
+    fontSize: 16,
+    fontWeight: "600",
+  },
+
+  modalContent: {
+    backgroundColor: "white",
+    padding: 20,
+    borderRadius: 10,
+    maxHeight: "50%",
+  },
+  option: {
+    padding: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: "#ccc",
+  },
+  optionText: {
+    fontSize: 16,
+  },
 });

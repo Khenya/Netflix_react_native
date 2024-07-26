@@ -5,6 +5,7 @@ import { styles } from '../../config/theme/app-theme';
 const MovieBox = ({ title, description, imageUrl, onDelete }) => {
   return (
     <View style={styles.containerDownlads}>
+      
       <Image source={{ uri: imageUrl }} style={styles.image} />
       <View style={styles.textContainer}>
         <Text style={styles.titleMovieContainer}>{title}</Text>
