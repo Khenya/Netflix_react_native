@@ -2,6 +2,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import CommingSoonScreen from "../screens/CommingSoonScreen";
 import ProfileScreen from "../screens/ProfileScreen";
+import DescripcionMovieScreen from "../screens/DescripcionMovieScreen";
+import PlayMovieScreen from "../screens/PlayMovieScreen";
 
 const Stack = createStackNavigator();
 
