@@ -9,7 +9,7 @@ const VistosRecientementeComponent = ({ imageUrl, nameMovie }) => {
 
   return (
     <TouchableOpacity onPress={() => navigation.navigate("descripcionMovieScreen")}>
-      <View>
+      <View style={{marginLeft:10}}>
         <ImageBackground
           style={styles.containerVistoRecientemente}
           source={{ uri: imageUrl }}

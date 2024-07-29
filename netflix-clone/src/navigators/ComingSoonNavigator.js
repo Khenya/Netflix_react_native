@@ -10,6 +10,8 @@ export const ComingSoonStack = () => {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="commingSoonScreen" component={CommingSoonScreen}></Stack.Screen>
         <Stack.Screen name="profileScreen" component={ProfileScreen}></Stack.Screen>
+        <Stack.Screen name="descripcionMovieScreen" component={DescripcionMovieScreen}></Stack.Screen>
+        <Stack.Screen name="playMovieScreen" component={PlayMovieScreen}></Stack.Screen>
       </Stack.Navigator>
     );
   };

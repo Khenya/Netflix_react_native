@@ -16,7 +16,7 @@ const HeaderGeneralComponent = ({ avatar = avatarDefault }) => {
 
   return (
     <View style={styles.containerHeader}>
-      <Icon1 name="menu" size={30} color="white" />
+      <Icon1 name="menu" size={30} color="black" />
       <Image source={logoNetflixx} style={styles.containerLogoNetflixx} />
       <Pressable onPress={()=> navigation.navigate("profileScreen")}>
         <Image source={{uri:avatar}} style={styles.containerAvatar} />

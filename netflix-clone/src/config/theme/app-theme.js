@@ -223,6 +223,7 @@ export const styles = StyleSheet.create({
     borderTopStartRadius: 5,
     borderTopEndRadius: 5,
     overflow: "hidden",
+    
   },
 
   shareMovieVistoRecientemente: {

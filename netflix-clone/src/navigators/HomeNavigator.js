@@ -5,6 +5,7 @@ import ListaPeliculasScreen from "../screens/ListaPeliculasScreen";
 import DescripcionMovieScreen from "../screens/DescripcionMovieScreen";
 import PlayMovieScreen from "../screens/PlayMovieScreen";
 import ProfileScreen from "../screens/ProfileScreen";
+import SearchScreen from "../screens/SearchScreen";
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ export const HomeStack = () => {
         <Stack.Screen name="descripcionMovieScreen" component={DescripcionMovieScreen}></Stack.Screen>
         <Stack.Screen name="playMovieScreen" component={PlayMovieScreen}></Stack.Screen>
         <Stack.Screen name="profileScreen" component={ProfileScreen}></Stack.Screen>
+        <Stack.Screen name="searchScreen" component={SearchScreen}></Stack.Screen>
       </Stack.Navigator>
     );
   };

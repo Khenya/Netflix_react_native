@@ -25,7 +25,7 @@ const ProfileScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollView}>
+      <ScrollView style={{marginHorizontal:10,}}>
         <HeaderPerfilComponent />
         <PerfilComponent imagePerfil={avatarDefault} namePerfil={"Jhon"} />
         <Text style={styles.subTitleForScroll}>Mi Lista</Text>

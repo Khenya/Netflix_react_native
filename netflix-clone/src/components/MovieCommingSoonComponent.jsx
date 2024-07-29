@@ -6,7 +6,7 @@ const MovieCommingSoonComponent = ({ imageUrl }) => {
   const navigation = useNavigation();
 
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate("descripcionMovieScreen")} >
       <View style={styles.container}>
         <Image style={styles.image} source={{ uri: imageUrl }} />
       </View>

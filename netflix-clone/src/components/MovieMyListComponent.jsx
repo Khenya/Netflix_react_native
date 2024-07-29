@@ -9,8 +9,9 @@ const MovieMyListComponent = ({ imageUrl }) => {
       <View
         style={{
           height: 130,
-          width: 85,
-          marginLeft: 10,
+          width: 95,
+          marginLeft: 5,
+          marginTop:5,
           borderRadius: 10,
           overflow: "hidden",
         }}
