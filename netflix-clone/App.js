@@ -12,6 +12,7 @@ import LoginScreen from "./src/screens/LoginScreen";
 import SignUpScreen from "./src/screens/SingUpScreen";
 import ForgotPassword from "./src/screens/ForgotPasswordScreen";
 
+
 import { ComingSoonStack } from "./src/navigators/ComingSoonNavigator";
 import { DownloadStack } from "./src/navigators/DownloadNavigator";
 import { HomeStack } from "./src/navigators/HomeNavigator";
@@ -28,6 +29,10 @@ export default function App() {
         <Stack.Screen name="login" component={LoginScreen} />
         <Stack.Screen name="signup" component={SignUpScreen} />
         <Stack.Screen name="forgot" component={ForgotPassword} />
+        <Tab.Screen name="Home" component={HomeStack}></Tab.Screen>
+        <Tab.Screen name="Search" component={SearchStack}></Tab.Screen>
+        <Tab.Screen name="Comming" component={ComingSoonStack}></Tab.Screen>
+        <Tab.Screen name="Download" component={DownloadStack}></Tab.Screen>
       </Stack.Navigator>
       {/* <Tab.Navigator
         screenOptions={({ route }) => ({

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { SafeAreaView, TextInput, Text, StyleSheet, Image, View, TouchableOpacity, ActivityIndicator } from "react-native";
 import { Button } from "react-native-elements";
-// import { signInWithEmailAndPassword } from "firebase/auth";
-// import { auth } from "../config/firebase/firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../config/firebase/firebase";
 import logo from "../assets/LogoNetflixHeader.png"; 
 import SignUpScreen from "./SingUpScreen";
 import ForgotPassword from "./ForgotPasswordScreen";
@@ -19,6 +19,7 @@ const LoginScreen = ({ navigation }) => {
         const user = userCredential.user;
         console.log(user);
         setLoading(false);
+        navigation.navigate("Home");
       })
       .catch((error) => {
         const errorCode = error.code;
